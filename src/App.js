@@ -5,30 +5,30 @@ import './App.css';
 
 function App() {
 
-  const [data, setData] = useState({
-    name: null,
-    email: null
-  });
+  // const [data, setData] = useState({
+  //   name: null,
+  //   email: null
+  // });
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await axios(
-        'http://localhost:8082/api/hello/view/61485e1b9e77a6da2f05c31e',
-      );
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const result = await axios(
+  //       'http://localhost:8082/api/hello/view/61485e1b9e77a6da2f05c31e',
+  //     );
 
-      setData(result.data);
-    };
+  //     setData(result.data);
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
-  console.log(data);
-  console.log(data.email);
+  // console.log(data);
+  // console.log(data.email);
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello {data.name}</h1>
+        <h1>Hello World</h1>
       </header>
     </div>
   );
